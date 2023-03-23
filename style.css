@@ -875,6 +875,10 @@
  }
 
  @media screen and (max-width: 520px){
+     .healthy-sec .content{
+        margin-top: -20px;
+        margin-left: -45px;
+    }
 
     .menu-card{
         width: 80%;
