@@ -1,0 +1,941 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header{
+    width: 100%;
+    height: 22vw;
+    position: relative;
+}
+.header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.svg1{
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+}
+
+.navbar{
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 10vw;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar .logo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.links{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#cross{
+    display: none;
+}
+.links i{
+    display: none;
+}
+.links ul{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar .logo img{
+    margin-top: -30px;
+    width: 250px;
+}
+.menus li{
+    list-style: none;
+    display: inline-block;
+}
+.menus a{
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(47, 68, 107);
+    font-weight: bold;
+    line-height: 1.575;
+    text-align: center;
+    transition: 0.2s;
+}
+.menus a:hover{
+    color: #fa8a43;
+}
+
+.healthy-sec{
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    background: url(images/healthy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+}
+
+.svg2{
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+.svg3{
+    position: absolute;
+    top: 7vw;
+    left: 0;
+}
+
+.healthy-sec .content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+.healthy-sec .content h1{
+    font-weight: normal;
+    font-size: 52.548px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(47, 68, 107);
+    line-height: 1;
+    text-align: center;
+      
+}
+
+.healthy-sec .content h1 span{
+    font-weight: bolder;
+}
+
+.healthy-sec .content p{
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(47, 68, 107);
+    line-height: 1.3;
+    text-align: center;
+}
+  
+
+.order-sec{
+    position: relative;
+    height: 55vw;
+    width: 100%;
+    background-color: #2f446b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.order-head{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.order-head span{
+    font-weight: lighter;
+}
+.collaps-cards{
+    z-index: 100;
+}
+.collaps-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    background-color: #fa8a43;
+    height: 24vw;
+}
+.card{
+    position: relative;
+    padding: 20px;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-body{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.num{
+    position: absolute;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 15px;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.svg4{
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+}
+
+.menu-sec{
+    position: relative;
+    min-height: 55vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.menu-sec .menu-head{
+    font-size: 50px;
+    font-family: "Nunito";
+    color: rgb(47, 68, 107);
+    text-transform: uppercase;
+}
+
+.menu-sec .menu-head span{
+    color: rgb(47, 68, 107);
+    font-weight: lighter;
+}
+
+.menu-cards .menu-card{
+    /* width: 25%; */
+    margin: 0 30px;
+}
+
+.menu-cards{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-body .head{
+    color: rgb(47, 68, 107);
+}
+.menu-card .price{
+    color: rgb(47, 68, 107);
+    font-size: 30px;
+    font-weight: bolder;
+}
+.menu-body{
+    padding: 20px;
+}
+.menu-card .line{
+    background-color: rgb(47, 68, 107);
+    margin: 15px 0;
+    width: 100%;
+    height: 2px;
+
+}
+.menu-img img{
+    height: 300px;
+    width: 100%;
+}
+.more-menu .btn{
+    font-size: 20px;
+    background-color: rgb(47, 68, 107);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+
+.more-menu .btn:hover{
+    background-color: #fa8a43;
+}
+
+.special-menu{
+    position: relative;
+    height: 50vw;
+    width: 100%;
+    background: url(images/spa-bra.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+}
+.spe-content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    color: rgb(47, 68, 107);
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 60% 0;
+}
+
+.spe-content h1{
+    font-size: 50px;
+    font-family: "Nunito";
+    text-transform: uppercase;
+}
+.spe-content p{
+    font-size: 20px;
+}
+
+.spe-content .btn{
+    font-size: 20px;
+    background-color: #fa8a43;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+
+.spe-content .btn:hover{
+    background-color: rgb(47, 68, 107);
+}
+
+.svg5{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+.vegan-sec{
+    position: relative;
+    min-height: 60vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.vegan-sec .vegan-head{
+    font-size: 50px;
+    font-family: "Nunito";
+    color: rgb(47, 68, 107);
+    text-transform: uppercase;
+}
+
+.vegan-sec .vegan-head span{
+    color: rgb(47, 68, 107);
+    font-weight: lighter;
+}
+
+.vegan-cards .vegan-card{
+    margin: 0 30px;
+}
+
+.vegan-cards{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vegan-body .head{
+    color: rgb(47, 68, 107);
+}
+.vegan-card .price{
+    color: rgb(47, 68, 107);
+    font-size: 30px;
+    font-weight: bolder;
+}
+.vegan-body{
+    padding: 20px;
+}
+.menu-card .line{
+    background-color: rgb(47, 68, 107);
+    margin: 15px 0;
+    width: 100%;
+    height: 2px;
+
+}
+.vegan-img img{
+    height: 300px;
+    width: 100%;
+}
+.vegan-menu .btn{
+    font-size: 20px;
+    background-color: #9fb543;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+
+.vegan-menu .btn:hover{
+    background-color: rgb(47, 68, 107);
+}
+
+
+
+
+.promo{
+    position: relative;
+    height: 110vw;
+    width: 100%;
+    background: url(images/promo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+}
+
+.svg6{
+    height: 50%;
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: -25%;
+}
+.svg7{
+    height: 50%;
+    position: absolute;
+    z-index: 10;
+    top: 50px;
+    left: -25%;
+}
+
+.content-promo{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: 101;
+}
+
+.left{
+    color: rgb(47, 68, 107);
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 50%;
+     height: 50%;
+}
+.left h1{
+    text-align: left;
+}
+
+.left p{
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+.right h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.right span{
+    font-weight: lighter;
+}
+.right{
+    color: white;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 50%;
+
+}
+
+
+.read-more{
+    font-size: 20px;
+    background-color: #9fb543;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+
+.read-more:hover{
+    background-color: #fa8a43;
+}
+
+.svg8{
+    height: 50%;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0%;
+}
+
+
+
+.icon-sec{
+    position: relative;
+    height: 50vw;
+    width: 100%;
+    background-color: #fa8a43;
+    color: rgb(47, 68, 107);
+}
+.cont-icon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ .icon-sec .paragraph{
+    width: 90%;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    margin: 20px 0;
+ }
+
+ .paragraph img{
+    height: 40px;
+    width: 40px;
+ }
+
+
+ .icon img{
+    height: 40px;
+    width: 40px;
+    margin: 15px;
+ }
+
+ .svg9{
+    position: absolute;
+    top: -2px;
+    left: 0;
+    z-index: 10;
+ }
+
+ .svg10{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+ }
+
+ .footer{
+    position: relative;
+    top: -2px;
+    color: white;
+    height: 30vw;
+    width: 100%;
+    background-color: rgb(47, 68, 107);
+    display: flex;
+ }
+ .left-footer{
+    width: 50%;
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    padding: 2rem;
+    flex-direction: column;
+ }
+ .right-footer{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .div1 h3{
+    margin-bottom: 20px;
+ }
+
+
+
+
+ @media screen and (max-width: 992px) {
+    .navbar .logo img{
+        width: 180px;
+    }
+    .healthy-sec .content h1{
+        font-size: 40px;
+    }
+    .healthy-sec .content p{
+        font-size: 18px;
+    }
+    .order-sec{
+        height: 1000px;
+
+    }
+    .collaps-cards{
+        justify-content: space-around;
+        flex-direction: column;
+        height: 800px;
+        width: 50%;
+    }
+    .collaps-cards .card{
+        height: 350px;
+        width: 100%;
+    }
+    .spe-content p{
+        font-size: 14px;
+    }
+    .menu-sec .menu-head{
+        font-size: 30px;
+    }
+    .menu-body .price{
+        font-size: 20px;
+    }
+    .spe-content h1{
+        font-size: 25px;
+    }
+    .menu-body .price{
+        font-size: 20px;
+    }
+    .menu-sec{
+        height: 1700px;
+    }
+    .menu-cards{
+        height: 1550px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .menu-card{
+        width: 50%;
+        border: 1px solid tomato;
+    }
+    
+    .spe-content .btn{
+        font-size: 10px;
+    }
+    .vegan-sec{
+        height: 1700px;
+    }
+    .vegan-cards{
+        height: 1550px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .vegan-card{
+        width: 50%;
+        border: 1px solid tomato;
+    }
+    .vegan-sec .vegan-head{
+        font-size: 30px;
+    }
+    .vegan-body .price{
+        font-size: 14px;
+    }
+    .left{
+        padding: 1rem;
+        bottom: -10px;
+    }
+    .right h1{
+        font-size: 20px;
+    }
+    .right{
+        padding: 1rem;
+        padding-left: 2rem;
+    }
+    .cont-icon p{
+        font-size: 18px;
+    }
+
+
+
+    .rfsh{
+        font-size: 20px;
+    }
+    .rfsp{
+        font-size: 14px;
+    }
+ }
+
+
+ @media screen and (max-width: 768px){
+    .navbar .logo img{
+        margin-top: -35px;
+        width: 130px;
+    }
+    
+    .links{
+        flex-direction: column;
+    }
+    .links i{
+        display: block;
+    }
+    #menu{
+        display: none;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .menus li{
+        background-color: #9fb543;
+        padding: 5px;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    
+    
+    .healthy-sec .content h1{
+        font-weight: normal;
+        font-size: 26px;
+          
+    }
+    
+    
+    .healthy-sec .content p{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+
+    .special-menu{
+        height: 60vw;
+    }
+    .spe-content{
+        left: 0;
+        top: 0;
+        padding: 10px;
+    }
+    
+    .spe-content h1{
+        font-size: 20px;
+    }
+    .spe-content p{
+        font-size: 14px;
+    }
+    
+    .spe-content .btn{
+        font-size: 14px;
+        padding: 7px 10px;
+    }
+    
+
+
+    .left{
+        padding: 1rem;
+         left: 0;
+         bottom: -50px;
+    }
+    
+    .left p{
+        margin: 0;
+    }
+    
+    .right h1{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .right{
+        padding: 2rem;
+        right: -40px;
+    }
+    
+    
+    .read-more{
+        font-size: 15px;
+        background-color: #9fb543;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 20px;
+    }
+    
+ }
+
+ @media screen and (max-width: 600px){
+    .special-menu, .healthy-sec{
+        height: 70vw;
+    }
+  
+    .menu-card{
+        width: 70%;
+    }
+    .vegan-card{
+        width: 70%;
+    }
+
+    .left{
+        padding: 1rem;
+    }
+    .collaps-cards{
+        width: 80%;
+    }
+    .svg3{
+        height: 35vw;
+        width: 100%;
+    }
+    .healthy-sec .content{
+        margin-left: -35px;
+    }
+    
+    .read-more{
+        font-size: 15px;
+        background-color: #9fb543;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 20px;
+    }
+    .right{
+        padding: 1rem;
+        right: -60px;
+    }
+    
+    .icon-sec{
+        height: 60vw;
+        width: 100%;
+    }
+
+
+    .icon-sec .paragraph{
+        width: 80%;
+        font-size: 10px;
+    }
+    .paragraph p{
+        padding: 0 20px ;
+        text-align: center;
+    }
+    .paragraph img{
+        height: 20px;
+        width: 20px;
+    }
+
+
+    .icon img{
+        height: 30px;
+        width: 30px;
+        margin: 15px;
+    }
+
+    .footer{
+        height: 60vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+ }
+
+ @media screen and (max-width: 520px){
+
+    .menu-card{
+        width: 80%;
+    }
+    .vegan-card{
+        width: 80%;
+    }
+    .svg6, .svg7{
+        left: -230px;
+    }
+    
+    .icon-sec{
+        height: 100vw;
+        width: 100%;
+    }
+
+
+    .icon-sec .paragraph{
+        width: 80%;
+        font-size: 10px;
+        font-weight: normal;
+    }
+    
+
+    
+    .healthy-sec .content h1{
+        font-size: 20px;
+    }
+    
+
+    .spe-content h1{
+        font-size: 15px;
+    }
+    .spe-content p{
+        font-size: 12px;
+        height: 60px;
+        overflow: hidden;
+    }
+    
+    .spe-content .btn{
+        padding: 5px;
+        letter-spacing: 2px;
+    }
+    
+    .right{
+        right: -10px;
+    }
+
+    .left{
+         padding: 1rem;
+         left: 20px;
+         bottom: -35px;
+    }
+    
+    .left p{
+        margin: 3px 0;
+        height: 55px;
+        overflow: hidden;
+    }
+   .footer{
+    height: 110vw;
+    justify-content: flex-start;
+   }
+ }
