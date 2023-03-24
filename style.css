@@ -871,6 +871,9 @@
         align-items: center;
         justify-content: center;
     }
+    .left-footer{
+        padding: 1rem;
+    }
  }
 
  @media screen and (max-width: 520px){
@@ -938,6 +941,6 @@
         font-weight: normal;
     }
    .footer{
-    justify-content: flex-start;
+        justify-content: flex-start;
    }
  }
