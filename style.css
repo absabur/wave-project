@@ -873,6 +873,10 @@
     }
     .left-footer{
         padding: 1rem;
+        width: 70%;
+    }
+    .right-footer{
+        width: 70%;
     }
  }
 
